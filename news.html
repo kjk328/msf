@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSF | News</title>
+  <link rel="stylesheet" href="styles.css?v=26">
+  <script src="data/news.js?v=1787645264"></script>
+  <script src="app.js?v=19" defer></script>
+</head>
+<body data-page="news">
+  <header data-site-header></header>
+  <main class="news-page light-section" data-news-page>
+    <section class="news-hero">
+      <div class="site-container news-hero-grid">
+        <div class="news-hero-copy">
+          <p class="eyebrow">News &amp; Updates</p>
+          <h1>Latest news from MSF.</h1>
+          <p>Explore updates, activities, and stories from the Materials &amp; Systems Foundry Group.</p>
+        </div>
+        <div class="news-hero-media" data-news-hero-media aria-label="Recent gallery photographs"></div>
+      </div>
+    </section>
+    <section class="news-archive section-space">
+      <div class="site-container">
+        <div class="news-toolbar">
+          <div><p class="eyebrow">Archive</p><h2>Foundry updates</h2></div>
+          <div class="news-filter-group" data-news-filters>
+            <div class="news-year-filters" data-news-years aria-label="Filter news by year"></div>
+            <label class="news-category-label">Category
+              <select data-news-category><option value="all">All categories</option></select>
+            </label>
+          </div>
+        </div>
+        <div class="news-grid" data-news-list><p class="news-loading">Loading news archive…</p></div>
+      </div>
+    </section>
+  </main>
+  <div class="news-lightbox" data-news-lightbox hidden role="dialog" aria-modal="true" aria-label="News image viewer">
+    <button class="news-lightbox-close" type="button" data-news-lightbox-close aria-label="Close image viewer">×</button>
+    <button class="news-lightbox-nav previous" type="button" data-news-lightbox-prev aria-label="Previous image">‹</button>
+    <figure>
+      <img data-news-lightbox-image alt="">
+      <figcaption><span data-news-lightbox-caption></span><b data-news-lightbox-count></b></figcaption>
+    </figure>
+    <button class="news-lightbox-nav next" type="button" data-news-lightbox-next aria-label="Next image">›</button>
+  </div>
+  <footer data-site-footer></footer>
+</body>
+</html>

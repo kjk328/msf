@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MSF members">
+  <title>MSF | Members</title>
+  <link rel="stylesheet" href="styles.css?v=22">
+  <script src="data/members.js?v=1787649664" defer></script>
+  <script src="app.js?v=15" defer></script>
+</head>
+<body data-page="member">
+  <header data-site-header></header>
+  <main>
+    <section class="hero member-hero">
+      <div class="hero-reference" aria-hidden="true"><img src="assets/member-hero-original.png" alt=""></div>
+      <div class="site-container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Members</p>
+          <h1>Members Behind the Foundry</h1>
+          <p>Our researchers connect materials, devices, and intelligence to build the next generation of robotic systems.</p>
+          <div class="stats" aria-label="Members statistics">
+            <span><b data-member-stat="researchers">00</b>Students</span>
+            <span><b data-member-stat="published">00</b>Publications</span>
+            <span><b data-member-stat="in-progress">00</b>In Progress</span>
+            <span><b data-member-stat="experiment">00</b>In Experiment</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="light-section">
+      <div class="site-container member-content">
+        <div class="filter-row" data-member-filters data-member-scope="students">
+          <div>
+            <button class="active" data-filter="all">All Students</button>
+            <button data-filter="graduate">Graduate Students</button>
+            <button data-filter="undergrad">Undergraduate Students</button>
+          </div>
+          <select aria-label="Research area" data-area-filter>
+            <option value="all">All Research Areas</option>
+          </select>
+        </div>
+
+        <p class="member-loading" data-member-loading>Loading members data...</p>
+
+        <section class="member-group" data-member-section="graduate">
+          <h2>Graduate Students</h2>
+          <div class="graduate-grid" data-member-grid="graduate"></div>
+        </section>
+
+        <section class="member-group" data-member-section="undergraduate">
+          <h2>Undergraduate Students</h2>
+          <div class="undergrad-grid" data-member-grid="undergraduate"></div>
+        </section>
+
+        <p class="empty-state" hidden>No members match these filters.</p>
+        <noscript><p class="empty-state">JavaScript is required to display members data.</p></noscript>
+      </div>
+    </section>
+  </main>
+  <footer data-site-footer></footer>
+</body>
+</html>
+
+
+

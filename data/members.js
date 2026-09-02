@@ -210,7 +210,7 @@ window.MSF_MEMBER_DATA = {
                          {
                              "member_id":  "hyeseoung-lim",
                              "year":  2026,
-                             "title":  "In press",
+                             "title":  "Preferential Interfacial Engineering of Hydrogels via Interdigitated Nanoparticle Assembly",
                              "journal":  "Advanced Function Materials",
                              "url":  "",
                              "role":  "First Author",
@@ -237,7 +237,7 @@ window.MSF_MEMBER_DATA = {
                          {
                              "member_id":  "heeyeon-kang",
                              "year":  2026,
-                             "title":  "In press",
+                             "title":  "Preferential Interfacial Engineering of Hydrogels via Interdigitated Nanoparticle Assembly",
                              "journal":  "Advanced Function Materials",
                              "url":  "",
                              "role":  "Co-author",
